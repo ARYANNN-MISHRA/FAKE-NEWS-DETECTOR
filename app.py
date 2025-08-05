@@ -14,9 +14,6 @@ st.set_page_config(
 st.title("📰 AI-Powered Fake News Detector (BERT-Powered)")
 st.subheader("Using a Transformer Model for Contextual Analysis")
 
-st.markdown("""
-This is an advanced version of the fake news detector, leveraging a pre-trained BERT model. This model excels at understanding the nuances and context of language, leading to much more accurate predictions than a simple machine learning model.
-""")
 
 # --- 2. Load Model and Tokenizer ---
 # Caching the model and tokenizer to prevent reloading on every user interaction
@@ -120,3 +117,4 @@ This application demonstrates a state-of-the-art approach to fake news detection
     -   ✅ **Advanced Model:** Implemented a BERT model.
     -   ✅ **Confidence Visualization:** Added metrics and progress bars for confidence scores.
 """)
+
