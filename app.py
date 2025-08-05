@@ -89,11 +89,11 @@ if st.button("Predict"):
 
         if predicted_label == 'Real':
             st.success("This news appears to be **REAL**.")
-            st.progress(real_confidence)
+            st.progress(int(real_confidence * 100))
             st.balloons()
         else:
             st.error("This news appears to be **FAKE**.")
-            st.progress(fake_confidence)
+            st.progress(int(fake_confidence * 100))
             st.snow()
 
         st.markdown("---")
@@ -101,5 +101,6 @@ if st.button("Predict"):
 
     else:
         st.warning("Please enter some text to make a prediction.")
+
 
 
