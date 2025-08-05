@@ -102,19 +102,4 @@ if st.button("Predict"):
     else:
         st.warning("Please enter some text to make a prediction.")
 
-# --- 5. Footer and Sidebar ---
-st.sidebar.title("App Details")
-st.sidebar.markdown(f"""
-This application demonstrates a state-of-the-art approach to fake news detection using a **Transformer-based model (BERT)**.
-
-* **Core Components:**
-    -   **`Hugging Face Transformers`:** Provides the BERT model and tokenizer.
-    -   **`PyTorch`:** The deep learning framework used by the model.
-    -   **`Streamlit`:** Used for building the interactive web app.
-
-* **Addressing your feedback:**
-    -   ✅ **Larger Dataset:** Handled by using a model pre-trained on a massive text corpus.
-    -   ✅ **Advanced Model:** Implemented a BERT model.
-    -   ✅ **Confidence Visualization:** Added metrics and progress bars for confidence scores.
-""")
 
